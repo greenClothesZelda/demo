@@ -1,15 +1,10 @@
 package com.example.demo;
 
-import java.util.List;
-import java.util.Optional;
-
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import com.example.demo.answer.Answer;
 import com.example.demo.answer.AnswerRepository;
-import com.example.demo.question.Question;
 import com.example.demo.question.QuestionRepository;
 
 @SpringBootTest
@@ -106,17 +101,17 @@ class DemoApplicationTests {
         // assertEquals("ap메이지만 하는 틀딱이라서", alist.get(0).getContent());
 
         //궁금증
-        Optional<Question> oq = this.questionRepository.findById(58);
-        Question q = oq.get();
+        // Optional<Question> oq = this.questionRepository.findById(58);
+        // Question q = oq.get();
 
-        // List<Answer> aList = this.answerRepository.findAll();
-        // q.setAnswerList(aList);
-        // Answer ans = aList.get(0);
-        // ans.setQuestion(q);
-        // this.answerRepository.save(ans);
-        // this.questionRepository.save(q);
+        // // List<Answer> aList = this.answerRepository.findAll();
+        // // q.setAnswerList(aList);
+        // // Answer ans = aList.get(0);
+        // // ans.setQuestion(q);
+        // // this.answerRepository.save(ans);
+        // // this.questionRepository.save(q);
 
-        this.questionRepository.delete(q);
+        // this.questionRepository.delete(q);
 
 	}
 
